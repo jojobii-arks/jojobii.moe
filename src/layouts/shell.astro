@@ -1,26 +1,30 @@
 ---
+const { title, description, image } = Astro.props.frontmatter || {
+		title: 'jojobii.moe',
+		description: "jojobii's home page",
+		image: 'https://jojobii.moe/assets/og-image.png'
+	};
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
+
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 
-		<title>jojobii.moe</title>
-		
-		<meta property="og:title" content="jojobii.moe" />
-    <meta property="og:description" content="jojobii's home page" />
-    <meta property="og:url" content="https://jojobii.moe/" />
-    <meta
-      property="og:image"
-      content="https://jojobii.moe/assets/og-image.png"
-    />
+		<title>{title}</title>
+		<meta name="description" content={description} />
 
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content="https://jojobii.moe/" />
+		<meta property="og:image" content={image} />
 	</head>
 	<body>
 		<slot />
