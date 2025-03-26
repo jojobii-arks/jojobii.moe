@@ -1,5 +1,4 @@
 export const links: { label: string, sub?: string, url: string}[] = [
-  { label: 'Fediverse', url: 'https://mk.arks.cafe/@jojobii'},
   { label: 'Twitter', url: 'https://twitter.com/jojobii_'},
   { label: 'TikTok', url: 'https://www.tiktok.com/@jojobii_'},
   { label: 'SoundCloud', url: 'https://soundcloud.com/jojobii'},
