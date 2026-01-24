@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="p-8">
       <div>
-        <h1 className="font-bold text-3xl mb-4">maimai USA removed songs</h1>
+        <h1 className="font-bold text-3xl mb-4">maimai USA removed songs - as of 1.56F </h1>
         <div className="mb-1">
           These songs are present in International version but NOT in USA version.
         </div>
@@ -60,3 +60,4 @@ export default function App() {
     </div>
   );
 }
+
