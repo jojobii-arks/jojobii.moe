@@ -1,14 +1,17 @@
 import data from './data.json';
 export default function App() {
   const getImageUrl = (imageName: string) => {
-    return `https://dp4p6x0xfi5o9.cloudfront.net/maimai/img/cover-m/${imageName}`;
+    return `https://dc6ubq27a2n39.cloudfront.net/mai-cover/${imageName}`;
   };
   return (
     <div className="p-8">
       <div>
-        <h1 className="font-bold text-3xl mb-4">maimai USA removed songs - as of 1.56F </h1>
+        <h1 className="font-bold text-3xl mb-4">
+          maimai USA removed songs - as of 1.56F{' '}
+        </h1>
         <div className="mb-1">
-          These songs are present in International version but NOT in USA version.
+          These songs are present in International version but NOT in USA
+          version.
         </div>
         <div className="text-sm italic">
           Reference:{' '}
@@ -60,4 +63,3 @@ export default function App() {
     </div>
   );
 }
-
